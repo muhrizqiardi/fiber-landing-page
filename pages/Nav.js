@@ -11,7 +11,8 @@ function Nav(props) {
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
+        <title>Fiber - Create your Own Portfolio Easily</title>
       </Head>
       <div className="brand md text-bold">Fiber</div>
       <div style={menuOpened ? {transform: "translateX(0)"}: {}} className="nav-menu d-flex-row w-80">
@@ -25,7 +26,7 @@ function Nav(props) {
           <div className="p-1 ml-1 text-bold sm btn color-light bg-primary">Sign Up</div>
         </div>
       </div>
-      <button onClick={togglerHandler} className="toggler btn bg-transparent"><img src="/Assets/Hamburger Menu.svg" alt="" /></button>
+      <button onClick={togglerHandler} className="toggler btn bg-transparent"><img src={menuOpened ? "/Assets/Hamburger X.svg" : "/Assets/Hamburger Menu.svg"} alt="" /></button>
     </nav>
   );
 }
