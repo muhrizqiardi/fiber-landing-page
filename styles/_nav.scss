@@ -1,0 +1,19 @@
+nav {
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  .brand {
+    width: fit-content;
+  }
+  .nav-menu {
+    justify-content: flex-end;
+    align-items: center;
+    transition: transform 0.2s;
+  }
+  .toggler {
+    width: fit-content;
+    img {
+      height: 20px;
+    }
+  }
+}

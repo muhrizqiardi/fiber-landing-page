@@ -1,0 +1,13 @@
+.testimonials {
+  article.card {
+    width: 100%;
+    .profile {
+      justify-items: first baseline;
+      grid-template-columns: 30px 1fr;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
